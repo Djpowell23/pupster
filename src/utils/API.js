@@ -6,5 +6,8 @@ export default {
   },
   getBreeds: function() {
     return axios.get("https://dog.ceo/api/breeds/list");
+  },
+  getBreedImages: function(breed) {
+    return axios.get(`https://dog.ceo/api/breed/${breed}/images`);
   }
 };
